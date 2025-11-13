@@ -1,0 +1,92 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Hero Splendor Bike",
+      "price": 55000,
+      "description": "Well-maintained Hero Splendor with all original parts and valid insurance. Excellent mileage.",
+      "seller": "Arjun Mehta",
+      "image": "../assets/bike.avif",
+      "category": "Vehicles",
+      "location": "Hyderabad",
+      "postedOn": "2025-11-08"
+    },
+    {
+      "id": 2,
+      "name": "Ergonomic Office Chair",
+      "price": 3200,
+      "description": "Comfortable ergonomic chair with adjustable height and mesh back. Ideal for long work sessions.",
+      "seller": "Priya Sharma",
+      "image": "../assets/chair.jpeg",
+      "category": "Furniture",
+      "location": "Bangalore",
+      "postedOn": "2025-11-09"
+    },
+    {
+      "id": 3,
+      "name": "Wireless Headphones",
+      "price": 1800,
+      "description": "Noise-cancelling Bluetooth headphones with powerful bass and 20-hour battery life.",
+      "seller": "Rahul Nair",
+      "image": "../assets/headphone.jpeg",
+      "category": "Electronics",
+      "location": "Chennai",
+      "postedOn": "2025-11-10"
+    },
+    {
+      "id": 4,
+      "name": "Wooden Study Lamp",
+      "price": 900,
+      "description": "Stylish wooden desk lamp with warm LED light. Perfect for study or bedroom use.",
+      "seller": "Sneha Patel",
+      "image": "../assets/lamp.jpeg",
+      "category": "Home Decor",
+      "location": "Delhi",
+      "postedOn": "2025-11-07"
+    },
+    {
+      "id": 5,
+      "name": "HP Laptop 15s",
+      "price": 48000,
+      "description": "HP 15s, Intel i5 11th Gen, 8GB RAM, 512GB SSD. Lightly used, charger included.",
+      "seller": "Anusha Reddy",
+      "image": "../assets/laptop.jpg",
+      "category": "Computers",
+      "location": "Hyderabad",
+      "postedOn": "2025-11-06"
+    },
+    {
+      "id": 6,
+      "name": "Microwave Oven",
+      "price": 3500,
+      "description": "IFB 20L convection oven in great working condition. Ideal for small families.",
+      "seller": "Ravi Kumar",
+      "image": "../assets/oven.jpeg",
+      "category": "Appliances",
+      "location": "Pune",
+      "postedOn": "2025-11-05"
+    },
+    {
+      "id": 7,
+      "name": "Wooden Dining Table",
+      "price": 7500,
+      "description": "4-seater solid wooden dining table with glass top. Slightly used, no scratches.",
+      "seller": "Meena Iyer",
+      "image": "../assets/table.jpeg",
+      "category": "Furniture",
+      "location": "Kochi",
+      "postedOn": "2025-11-04"
+    },
+    {
+      "id": 8,
+      "name": "LG Washing Machine",
+      "price": 14500,
+      "description": "Fully automatic top-load washing machine, 6.5 kg capacity. Works perfectly.",
+      "seller": "Vikram Singh",
+      "image": "../assets/washingmachine.jpeg",
+      "category": "Appliances",
+      "location": "Mumbai",
+      "postedOn": "2025-11-03"
+    }
+  ]
+}

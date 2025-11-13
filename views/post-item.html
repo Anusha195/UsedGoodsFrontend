@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post New Item</title>
+  <link rel="stylesheet" href="../styles/dashboard.css">
+  <link rel="stylesheet" href="../styles/post-item.css">
+</head>
+
+<body onload="checkUser()">
+
+  <nav class="dash-navbar">
+    <img src="../assets/logo.png" class="dash-logo" />
+    <h2>Post New Item</h2>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <!-- Sidebar same as dashboard -->
+  <div id="sideMenu" class="side-menu">
+    <ul>
+      <li onclick="window.location.href='dashboard.html'">Dashboard</li>
+      <li>My Listings</li>
+      <li>Edit Profile</li>
+      <li>Change Password</li>
+      <li>My Orders</li>
+      <li onclick="logout()" class="logout">Logout</li>
+    </ul>
+  </div>
+
+  <div id="overlay" class="overlay" onclick="toggleMenu()"></div>
+
+  <main class="post-container">
+    <form class="post-form" onsubmit="postItem(event)">
+      <h2>Post New Item</h2>
+
+      <label>Item Name</label>
+      <input type="text" id="itemName" required>
+
+      <label>Price (₹)</label>
+      <input type="number" id="itemPrice" required>
+
+      <label>Category</label>
+      <select id="itemCategory" required>
+        <option>Furniture</option>
+        <option>Mobile</option>
+        <option>Electronics</option>
+        <option>Decoration</option>
+        <option>Others</option>
+      </select>
+
+      <label>Image URL</label>
+      <input type="text" id="itemImage" placeholder="https://example.com/image.jpg" required>
+
+      <label>Description</label>
+      <textarea id="itemDescription" rows="4" required></textarea>
+
+      <button class="btn-primary" type="submit">Post Item</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Used Goods Marketplace</p>
+    <div class="social-links">
+        <a href="https://facebook.com" target="_blank">
+          <img src="../assets/facebook.jpeg" alt="Facebook" />
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="../assets/instagram.jpg" alt="Instagram" />
+        </a>
+        <a href="https://linkedin.com" target="_blank">
+          <img src="../assets/linkedin.jpg" alt="LinkedIn" />
+        </a>
+      </div>
+  </footer>
+
+  <script src="../scripts/post-item.js"></script>
+</body>
+</html>

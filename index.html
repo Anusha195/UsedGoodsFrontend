@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Used Goods Marketplace</title>
+    <link rel="stylesheet" href="styles/home.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Logo" />
+        <h2>Used Goods Marketplace</h2>
+      </div>
+      <div class="nav-buttons">
+        <button class="btn" onclick="openModal('loginModal')">Login</button>
+        <button class="btn btn-outline" onclick="openModal('registerModal')">Register</button>
+      </div>
+    </header>
+
+    <main class="featured-section">
+      <div class="item-grid" id="itemGrid">
+      </div>
+    </main>
+
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('loginModal')">&times;</span>
+        <h2>Login</h2>
+        <form class="form" onsubmit="handleLogin(event)">
+          <label for="loginEmail">Email</label>
+          <input type="email" id="loginEmail" placeholder="Enter email" required />
+
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" placeholder="Enter password" required />
+
+          <button class="btn btn-primary" type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="registerModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('registerModal')">&times;</span>
+        <h2>Register</h2>
+        <form class="form" onsubmit="handleRegister(event)">
+          <label for="name">Username</label>
+          <input type="text" id="name" placeholder="Enter username" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter email" required />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter password" required />
+
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" id="confirmPassword" placeholder="Confirm password" required />
+
+          <button class="btn btn-primary" type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>© 2025 Used Goods Marketplace</p>
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank">
+          <img src="assets/facebook.jpeg" alt="Facebook" />
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="assets/instagram.jpg" alt="Instagram" />
+        </a>
+        <a href="https://linkedin.com" target="_blank">
+          <img src="assets/linkedin.jpg" alt="LinkedIn" />
+        </a>
+      </div>
+    </footer>
+
+    <script src="scripts/home.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="../styles/dashboard.css" />
+</head>
+
+<body onload="loadDashboardUser()">
+  <nav class="dash-navbar">
+    <img src="../assets/logo.png" class="dash-logo" />
+
+    <h2 id="welcomeText">Welcome</h2>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </nav>
+  <div id="sideMenu" class="side-menu">
+    <ul>
+      <li>My Listings</li>
+      <li>Edit Profile</li>
+      <li>Change Password</li>
+      <li>My Orders</li>
+      <li onclick="logout()" class="logout">Logout</li>
+    </ul>
+  </div>
+  <div id="overlay" class="overlay" onclick="toggleMenu()"></div>
+  <section class="dashboard-content">
+    <div class="filters">
+      <input placeholder="Search items..." />
+      <select>
+        <option>All Categories</option>
+      </select>
+      <input type="number" placeholder="Min Price" />
+      <input type="number" placeholder="Max Price" />
+      <button>Apply Filters</button>
+      <button onclick="goToPostItem()">Post New Item</button>
+    </div>
+
+    <div class="item-grid" id="productGrid"></div>
+  </section>
+  <footer class="footer">
+      <p>© 2025 Used Goods Marketplace</p>
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank">
+          <img src="../assets/facebook.jpeg" alt="Facebook" />
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="../assets/instagram.jpg" alt="Instagram" />
+        </a>
+        <a href="https://linkedin.com" target="_blank">
+          <img src="../assets/linkedin.jpg" alt="LinkedIn" />
+        </a>
+      </div>
+    </footer>
+
+  <script src="../scripts/dashboard.js"></script>
+</body>
+</html>
